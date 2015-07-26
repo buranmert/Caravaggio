@@ -13,16 +13,22 @@ class MBButton: UIButton {
     var heightConstraint: NSLayoutConstraint?
     
     func setSizeConstraints(width width: CGFloat, height: CGFloat) {
-        self.setConstraintConstant(self.widthConstraint, constant: width)
-        self.setConstraintConstant(self.heightConstraint, constant: height)
-    }
-    
-    private func setConstraintConstant(var constraint: NSLayoutConstraint?, constant: CGFloat) {
-        if let aConstrains = constraint {
-            aConstrains.constant = constant
+        if let wConstraint = self.widthConstraint {
+            wConstraint.constant = width
         }
         else {
-            constraint = self.setWidth(constant)
+            self.widthConstraint = self.setWidth(width)
         }
+        if let hConstraint = self.heightConstraint {
+            hConstraint.constant = height
+        }
+        else {
+            self.heightConstraint = self.setHeight(height)
+        }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.beCircle()
     }
 }

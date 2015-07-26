@@ -10,11 +10,9 @@ import UIKit
 
 extension UIView {
     
-    convenience init(center: CGPoint, radius: CGFloat) {
-        let origin = CGPoint(x: center.x - radius, y: center.y - radius)
-        let size = CGSize(width: radius*2.0, height: radius*2.0)
-        let frame = CGRect(origin: origin, size: size)
-        self.init(frame: frame)
+    func beCircle() {
+        let radius = min(CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds)) / 2.0
+        self.layer.cornerRadius = radius
     }
     
     func pinEdgesOfViews(view1 view1: UIView, view2: UIView, edges:[NSLayoutAttribute]) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FBB18DE1B65328B00A01E9C /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB18DD1B65328B00A01E9C /* CGRectExtension.swift */; };
 		0FF08E1B1B638E5A001646D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E1A1B638E5A001646D8 /* AppDelegate.swift */; };
 		0FF08E1D1B638E5A001646D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E1C1B638E5A001646D8 /* ViewController.swift */; };
 		0FF08E201B638E5A001646D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF08E1E1B638E5A001646D8 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FBB18DD1B65328B00A01E9C /* CGRectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
 		0FF08E171B638E5A001646D8 /* Caravaggio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caravaggio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF08E1A1B638E5A001646D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FF08E1C1B638E5A001646D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				0FF08E481B63900C001646D8 /* CaravaggioButton.swift */,
 				0FF08E4C1B64C221001646D8 /* UIViewPositionExtension.swift */,
 				0FF08E4E1B64CCAD001646D8 /* MBButton.swift */,
+				0FBB18DD1B65328B00A01E9C /* CGRectExtension.swift */,
 			);
 			path = Caravaggio;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				0FF08E1D1B638E5A001646D8 /* ViewController.swift in Sources */,
 				0FF08E4F1B64CCAD001646D8 /* MBButton.swift in Sources */,
 				0FF08E4D1B64C221001646D8 /* UIViewPositionExtension.swift in Sources */,
+				0FBB18DE1B65328B00A01E9C /* CGRectExtension.swift in Sources */,
 				0FF08E491B63900C001646D8 /* CaravaggioButton.swift in Sources */,
 				0FF08E1B1B638E5A001646D8 /* AppDelegate.swift in Sources */,
 			);
@@ -495,6 +499,7 @@
 				0FF08E411B638E5A001646D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FF08E421B638E5A001646D8 /* Build configuration list for PBXNativeTarget "CaravaggioTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				0FF08E441B638E5A001646D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FF08E451B638E5A001646D8 /* Build configuration list for PBXNativeTarget "CaravaggioUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +517,7 @@
 				0FF08E471B638E5A001646D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
