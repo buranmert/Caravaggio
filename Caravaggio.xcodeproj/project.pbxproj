@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FF08E1B1B638E5A001646D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E1A1B638E5A001646D8 /* AppDelegate.swift */; };
+		0FF08E1D1B638E5A001646D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E1C1B638E5A001646D8 /* ViewController.swift */; };
+		0FF08E201B638E5A001646D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF08E1E1B638E5A001646D8 /* Main.storyboard */; };
+		0FF08E221B638E5A001646D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF08E211B638E5A001646D8 /* Assets.xcassets */; };
+		0FF08E251B638E5A001646D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF08E231B638E5A001646D8 /* LaunchScreen.storyboard */; };
+		0FF08E301B638E5A001646D8 /* CaravaggioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E2F1B638E5A001646D8 /* CaravaggioTests.swift */; };
+		0FF08E3B1B638E5A001646D8 /* CaravaggioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E3A1B638E5A001646D8 /* CaravaggioUITests.swift */; };
+		0FF08E491B63900C001646D8 /* CaravaggioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E481B63900C001646D8 /* CaravaggioButton.swift */; };
+		0FF08E4D1B64C221001646D8 /* UIViewPositionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E4C1B64C221001646D8 /* UIViewPositionExtension.swift */; };
+		0FF08E4F1B64CCAD001646D8 /* MBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E4E1B64CCAD001646D8 /* MBButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FF08E2C1B638E5A001646D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FF08E0F1B638E5A001646D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FF08E161B638E5A001646D8;
+			remoteInfo = Caravaggio;
+		};
+		0FF08E371B638E5A001646D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FF08E0F1B638E5A001646D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FF08E161B638E5A001646D8;
+			remoteInfo = Caravaggio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FF08E171B638E5A001646D8 /* Caravaggio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caravaggio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF08E1A1B638E5A001646D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0FF08E1C1B638E5A001646D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0FF08E1F1B638E5A001646D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FF08E211B638E5A001646D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FF08E241B638E5A001646D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FF08E261B638E5A001646D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF08E2B1B638E5A001646D8 /* CaravaggioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaravaggioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF08E2F1B638E5A001646D8 /* CaravaggioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaravaggioTests.swift; sourceTree = "<group>"; };
+		0FF08E311B638E5A001646D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF08E361B638E5A001646D8 /* CaravaggioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaravaggioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF08E3A1B638E5A001646D8 /* CaravaggioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaravaggioUITests.swift; sourceTree = "<group>"; };
+		0FF08E3C1B638E5A001646D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF08E481B63900C001646D8 /* CaravaggioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaravaggioButton.swift; sourceTree = "<group>"; };
+		0FF08E4C1B64C221001646D8 /* UIViewPositionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewPositionExtension.swift; sourceTree = "<group>"; };
+		0FF08E4E1B64CCAD001646D8 /* MBButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FF08E141B638E5A001646D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF08E281B638E5A001646D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF08E331B638E5A001646D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FF08E0E1B638E5A001646D8 = {
+			isa = PBXGroup;
+			children = (
+				0FF08E191B638E5A001646D8 /* Caravaggio */,
+				0FF08E2E1B638E5A001646D8 /* CaravaggioTests */,
+				0FF08E391B638E5A001646D8 /* CaravaggioUITests */,
+				0FF08E181B638E5A001646D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FF08E181B638E5A001646D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FF08E171B638E5A001646D8 /* Caravaggio.app */,
+				0FF08E2B1B638E5A001646D8 /* CaravaggioTests.xctest */,
+				0FF08E361B638E5A001646D8 /* CaravaggioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FF08E191B638E5A001646D8 /* Caravaggio */ = {
+			isa = PBXGroup;
+			children = (
+				0FF08E1A1B638E5A001646D8 /* AppDelegate.swift */,
+				0FF08E1C1B638E5A001646D8 /* ViewController.swift */,
+				0FF08E1E1B638E5A001646D8 /* Main.storyboard */,
+				0FF08E211B638E5A001646D8 /* Assets.xcassets */,
+				0FF08E231B638E5A001646D8 /* LaunchScreen.storyboard */,
+				0FF08E261B638E5A001646D8 /* Info.plist */,
+				0FF08E481B63900C001646D8 /* CaravaggioButton.swift */,
+				0FF08E4C1B64C221001646D8 /* UIViewPositionExtension.swift */,
+				0FF08E4E1B64CCAD001646D8 /* MBButton.swift */,
+			);
+			path = Caravaggio;
+			sourceTree = "<group>";
+		};
+		0FF08E2E1B638E5A001646D8 /* CaravaggioTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FF08E2F1B638E5A001646D8 /* CaravaggioTests.swift */,
+				0FF08E311B638E5A001646D8 /* Info.plist */,
+			);
+			path = CaravaggioTests;
+			sourceTree = "<group>";
+		};
+		0FF08E391B638E5A001646D8 /* CaravaggioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0FF08E3A1B638E5A001646D8 /* CaravaggioUITests.swift */,
+				0FF08E3C1B638E5A001646D8 /* Info.plist */,
+			);
+			path = CaravaggioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FF08E161B638E5A001646D8 /* Caravaggio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FF08E3F1B638E5A001646D8 /* Build configuration list for PBXNativeTarget "Caravaggio" */;
+			buildPhases = (
+				0FF08E131B638E5A001646D8 /* Sources */,
+				0FF08E141B638E5A001646D8 /* Frameworks */,
+				0FF08E151B638E5A001646D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Caravaggio;
+			productName = Caravaggio;
+			productReference = 0FF08E171B638E5A001646D8 /* Caravaggio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FF08E2A1B638E5A001646D8 /* CaravaggioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FF08E421B638E5A001646D8 /* Build configuration list for PBXNativeTarget "CaravaggioTests" */;
+			buildPhases = (
+				0FF08E271B638E5A001646D8 /* Sources */,
+				0FF08E281B638E5A001646D8 /* Frameworks */,
+				0FF08E291B638E5A001646D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FF08E2D1B638E5A001646D8 /* PBXTargetDependency */,
+			);
+			name = CaravaggioTests;
+			productName = CaravaggioTests;
+			productReference = 0FF08E2B1B638E5A001646D8 /* CaravaggioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0FF08E351B638E5A001646D8 /* CaravaggioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FF08E451B638E5A001646D8 /* Build configuration list for PBXNativeTarget "CaravaggioUITests" */;
+			buildPhases = (
+				0FF08E321B638E5A001646D8 /* Sources */,
+				0FF08E331B638E5A001646D8 /* Frameworks */,
+				0FF08E341B638E5A001646D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FF08E381B638E5A001646D8 /* PBXTargetDependency */,
+			);
+			name = CaravaggioUITests;
+			productName = CaravaggioUITests;
+			productReference = 0FF08E361B638E5A001646D8 /* CaravaggioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FF08E0F1B638E5A001646D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Mert Buran";
+				TargetAttributes = {
+					0FF08E161B638E5A001646D8 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					0FF08E2A1B638E5A001646D8 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 0FF08E161B638E5A001646D8;
+					};
+					0FF08E351B638E5A001646D8 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 0FF08E161B638E5A001646D8;
+					};
+				};
+			};
+			buildConfigurationList = 0FF08E121B638E5A001646D8 /* Build configuration list for PBXProject "Caravaggio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FF08E0E1B638E5A001646D8;
+			productRefGroup = 0FF08E181B638E5A001646D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FF08E161B638E5A001646D8 /* Caravaggio */,
+				0FF08E2A1B638E5A001646D8 /* CaravaggioTests */,
+				0FF08E351B638E5A001646D8 /* CaravaggioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FF08E151B638E5A001646D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF08E251B638E5A001646D8 /* LaunchScreen.storyboard in Resources */,
+				0FF08E221B638E5A001646D8 /* Assets.xcassets in Resources */,
+				0FF08E201B638E5A001646D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF08E291B638E5A001646D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF08E341B638E5A001646D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FF08E131B638E5A001646D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF08E1D1B638E5A001646D8 /* ViewController.swift in Sources */,
+				0FF08E4F1B64CCAD001646D8 /* MBButton.swift in Sources */,
+				0FF08E4D1B64C221001646D8 /* UIViewPositionExtension.swift in Sources */,
+				0FF08E491B63900C001646D8 /* CaravaggioButton.swift in Sources */,
+				0FF08E1B1B638E5A001646D8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF08E271B638E5A001646D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF08E301B638E5A001646D8 /* CaravaggioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF08E321B638E5A001646D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF08E3B1B638E5A001646D8 /* CaravaggioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FF08E2D1B638E5A001646D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FF08E161B638E5A001646D8 /* Caravaggio */;
+			targetProxy = 0FF08E2C1B638E5A001646D8 /* PBXContainerItemProxy */;
+		};
+		0FF08E381B638E5A001646D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FF08E161B638E5A001646D8 /* Caravaggio */;
+			targetProxy = 0FF08E371B638E5A001646D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FF08E1E1B638E5A001646D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FF08E1F1B638E5A001646D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0FF08E231B638E5A001646D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FF08E241B638E5A001646D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FF08E3D1B638E5A001646D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FF08E3E1B638E5A001646D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FF08E401B638E5A001646D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Caravaggio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MB.Caravaggio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0FF08E411B638E5A001646D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Caravaggio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MB.Caravaggio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0FF08E431B638E5A001646D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CaravaggioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MB.CaravaggioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caravaggio.app/Caravaggio";
+			};
+			name = Debug;
+		};
+		0FF08E441B638E5A001646D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CaravaggioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MB.CaravaggioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caravaggio.app/Caravaggio";
+			};
+			name = Release;
+		};
+		0FF08E461B638E5A001646D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CaravaggioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MB.CaravaggioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Caravaggio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0FF08E471B638E5A001646D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CaravaggioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MB.CaravaggioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Caravaggio;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FF08E121B638E5A001646D8 /* Build configuration list for PBXProject "Caravaggio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF08E3D1B638E5A001646D8 /* Debug */,
+				0FF08E3E1B638E5A001646D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FF08E3F1B638E5A001646D8 /* Build configuration list for PBXNativeTarget "Caravaggio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF08E401B638E5A001646D8 /* Debug */,
+				0FF08E411B638E5A001646D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0FF08E421B638E5A001646D8 /* Build configuration list for PBXNativeTarget "CaravaggioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF08E431B638E5A001646D8 /* Debug */,
+				0FF08E441B638E5A001646D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0FF08E451B638E5A001646D8 /* Build configuration list for PBXNativeTarget "CaravaggioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF08E461B638E5A001646D8 /* Debug */,
+				0FF08E471B638E5A001646D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FF08E0F1B638E5A001646D8 /* Project object */;
+}
