@@ -22,7 +22,7 @@ class ViewController: UIViewController, CaravaggioDataSource {
     }
     
     func numberOfItems(sender: CaravaggioButton, section: Int) -> Int {
-        return 3
+        return 15
     }
 
 }
