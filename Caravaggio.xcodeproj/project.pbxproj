@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FBB18DE1B65328B00A01E9C /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB18DD1B65328B00A01E9C /* CGRectExtension.swift */; };
+		0FBB18E01B65765B00A01E9C /* caravaggio_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB18DF1B65765B00A01E9C /* caravaggio_icon.png */; };
 		0FF08E1B1B638E5A001646D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E1A1B638E5A001646D8 /* AppDelegate.swift */; };
 		0FF08E1D1B638E5A001646D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E1C1B638E5A001646D8 /* ViewController.swift */; };
 		0FF08E201B638E5A001646D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF08E1E1B638E5A001646D8 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0FBB18DD1B65328B00A01E9C /* CGRectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
+		0FBB18DF1B65765B00A01E9C /* caravaggio_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caravaggio_icon.png; sourceTree = "<group>"; };
 		0FF08E171B638E5A001646D8 /* Caravaggio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caravaggio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF08E1A1B638E5A001646D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FF08E1C1B638E5A001646D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		0FF08E191B638E5A001646D8 /* Caravaggio */ = {
 			isa = PBXGroup;
 			children = (
+				0FBB18DF1B65765B00A01E9C /* caravaggio_icon.png */,
 				0FF08E1A1B638E5A001646D8 /* AppDelegate.swift */,
 				0FF08E1C1B638E5A001646D8 /* ViewController.swift */,
 				0FF08E1E1B638E5A001646D8 /* Main.storyboard */,
@@ -242,6 +245,7 @@
 			files = (
 				0FF08E251B638E5A001646D8 /* LaunchScreen.storyboard in Resources */,
 				0FF08E221B638E5A001646D8 /* Assets.xcassets in Resources */,
+				0FBB18E01B65765B00A01E9C /* caravaggio_icon.png in Resources */,
 				0FF08E201B638E5A001646D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

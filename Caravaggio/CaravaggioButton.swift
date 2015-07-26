@@ -116,6 +116,9 @@ private enum CaravaggioState {
     
     private let button: MBButton = {
         let button = MBButton(type: UIButtonType.Custom)
+        let inset: CGFloat = 3.0
+        button.imageEdgeInsets = UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
+        button.setImage(UIImage(named: "caravaggio_icon"), forState: UIControlState.Normal)
         button.backgroundColor = UIColor.redColor()
         button.layer.masksToBounds = true
         return button

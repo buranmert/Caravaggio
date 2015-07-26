@@ -59,7 +59,7 @@ class ViewController: UIViewController, CaravaggioDataSource, CaravaggioDelegate
     }
     
     func sizeForButton(sender: CaravaggioButton) -> CGSize {
-        return CGSize(width: 50.0, height: 50.0)
+        return CGSize(width: 25.0, height: 25.0)
     }
 
     func userDidSelectColor(sender: CaravaggioButton, color: UIColor?) {
