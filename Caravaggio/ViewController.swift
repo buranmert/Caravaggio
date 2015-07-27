@@ -33,7 +33,7 @@ class ViewController: UIViewController, CaravaggioDataSource, CaravaggioDelegate
         case 0:
             return 10
         case 1:
-            return 5
+            return 1
         case 2:
             return 4
         default:

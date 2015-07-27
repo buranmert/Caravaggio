@@ -132,16 +132,15 @@ private enum CaravaggioState {
     func commonInit() {
         self.backgroundColor = UIColor.clearColor()
         self.clipsToBounds = true
-        self.addButtonAndContainerView()
-        let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("containerViewTapped:"))
-        self.itemsContainerView.addGestureRecognizer(tapGestureRecognizer)
-    }
-    
-    func addButtonAndContainerView() {
+        
         self.addSubview(self.itemsContainerView)
         self.addSubview(self.button)
         self.pinEdgesOfSubview(self.button, edges: self.viewPosition.edgesToPin)
+        self.pinEdgesOfViews(view1: self.itemsContainerView, view2: self.button, edges: self.viewPosition.edgesToPin)
+        
         self.button.addTarget(self, action: Selector("toggleViewState"), forControlEvents: UIControlEvents.TouchUpInside)
+        let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("containerViewTapped:"))
+        self.itemsContainerView.addGestureRecognizer(tapGestureRecognizer)
     }
     
     override func layoutSubviews() {
@@ -173,11 +172,12 @@ private enum CaravaggioState {
     
     private func drawItems() {
         assert(self.dataSource != nil, "data source must be non-nil!")
-        var itemFramesArray: [[CGRect]] = []
+        var itemFramesMatrix: [[CGRect]] = []
         var maxItemRadius: CGFloat = 0.0
         let buttonRadius: CGFloat = max(self.dataSource!.sizeForButton(self).width, self.dataSource!.sizeForButton(self).height) / 2.0
         var beltRadius: CGFloat = buttonRadius
         let numberOfSections = self.dataSource!.numberOfSections(self)-1
+        //loop for sections
         for sectionIndex in 0...numberOfSections {
             var sectionItemFramesArray: [CGRect] = []
             let previousSectionItemRadius = self.safeItemRadius(sectionIndex-1)
@@ -185,36 +185,28 @@ private enum CaravaggioState {
             maxItemRadius = max(maxItemRadius, currentSectionItemRadius)
             var numberOfItemsAddedInCurrentSection = 0
             let numberOfItemsInCurrentSection = self.dataSource!.numberOfItems(self, section: sectionIndex)
+            //loop for items in one section
             while numberOfItemsAddedInCurrentSection < numberOfItemsInCurrentSection {
                 beltRadius += previousSectionItemRadius + marginBetweenBelts + currentSectionItemRadius
                 let numberOfItemsInCurrentBelt = self.numberOfItemsFitsToBelt(radius: beltRadius, itemRadius: currentSectionItemRadius, marginBetweenItems: marginBetweenItems)
                 var currentAngle: CGFloat = 0.0
                 let incrementAngle: CGFloat = angleRange / CGFloat(numberOfItemsInCurrentBelt - 1)
+                //loop for items in one belt
                 for _ in 0...numberOfItemsInCurrentBelt-1 {
                     let itemCenterPoint: CGPoint = self.createPoint(beltRadius: beltRadius, angle: currentAngle)
-                    currentAngle += incrementAngle
                     let itemFrame: CGRect = CGRect(center: itemCenterPoint, radius: currentSectionItemRadius)
                     sectionItemFramesArray.append(itemFrame)
+                    currentAngle += incrementAngle
                 }
+                //loop for items in one belt ends
                 numberOfItemsAddedInCurrentSection += numberOfItemsInCurrentBelt
             }
-            itemFramesArray.append(sectionItemFramesArray)
+            //loop for items in one section ends
+            itemFramesMatrix.append(sectionItemFramesArray)
         }
-        let transposedItemFramesArray: [[CGRect]] = itemFramesArray.map { (framesArray: [CGRect]) -> [CGRect] in
-            return framesArray.map({ (frame: CGRect) -> CGRect in
-                var newOrigin = frame.origin
-                newOrigin.x += maxItemRadius
-                newOrigin.y += maxItemRadius
-                return CGRect(origin: newOrigin, size: frame.size)
-            })
-        }
-        for (sectionIndex, framesArray) in transposedItemFramesArray.enumerate() {
-            for (itemIndex, frame) in framesArray.enumerate() {
-                let itemView: ColorItemView = self.colorItemView(frame: frame, index: itemIndex, section: sectionIndex)
-                self.itemsContainerView.addSubview(itemView)
-            }
-        }
-        self.pinEdgesOfViews(view1: self.itemsContainerView, view2: self.button, edges: self.viewPosition.edgesToPin)
+        //loop for sections ends
+        let transposedItemFramesArray: [[CGRect]] = transposeFramesWithOffset(itemFramesMatrix, offset: maxItemRadius)
+        self.drawColorItemViews(transposedItemFramesArray)
         self.resizeContainerView(beltRadius: beltRadius + maxItemRadius * 2.0)
     }
     
@@ -253,6 +245,29 @@ private enum CaravaggioState {
     private func safeItemRadius(sectionIndex: Int) -> CGFloat {
         if sectionIndex < 0 || sectionIndex >= self.dataSource!.numberOfSections(self) {return 0.0}
         else {return self.dataSource!.radiusForSectionItems(self, section: sectionIndex)}
+    }
+    
+    private func transposeFramesWithOffset(framesMatrix:[[CGRect]] , offset: CGFloat) -> [[CGRect]] {
+        //warning: this is a workaround that allows container view to cover all the items in it
+        //this functions slides all the items to a point at which they can be covered by container view
+        let transposedItemFramesArray: [[CGRect]] = framesMatrix.map { (framesArray: [CGRect]) -> [CGRect] in
+            return framesArray.map({ (frame: CGRect) -> CGRect in
+                var newOrigin = frame.origin
+                newOrigin.x += offset
+                newOrigin.y += offset
+                return CGRect(origin: newOrigin, size: frame.size)
+            })
+        }
+        return transposedItemFramesArray
+    }
+    
+    private func drawColorItemViews(framesMatrix: [[CGRect]]) {
+        for (sectionIndex, framesArray) in framesMatrix.enumerate() {
+            for (itemIndex, frame) in framesArray.enumerate() {
+                let itemView: ColorItemView = self.colorItemView(frame: frame, index: itemIndex, section: sectionIndex)
+                self.itemsContainerView.addSubview(itemView)
+            }
+        }
     }
 
     //MARK: Math helper functions
