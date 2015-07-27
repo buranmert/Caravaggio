@@ -12,7 +12,7 @@ class MBButton: UIButton {
     var widthConstraint: NSLayoutConstraint?
     var heightConstraint: NSLayoutConstraint?
     
-    func setSizeConstraints(width width: CGFloat, height: CGFloat) {
+    func setSizeConstraints(#width: CGFloat, height: CGFloat) {
         if let wConstraint = self.widthConstraint {
             wConstraint.constant = width
         }

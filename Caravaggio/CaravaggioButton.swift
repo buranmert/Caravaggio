@@ -115,7 +115,7 @@ private enum CaravaggioState {
         }()
     
     private let button: MBButton = {
-        let button = MBButton(type: UIButtonType.Custom)
+        let button: MBButton = MBButton.buttonWithType(UIButtonType.Custom) as! MBButton
         let inset: CGFloat = 3.0
         button.imageEdgeInsets = UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
         button.setImage(UIImage(named: "caravaggio_icon"), forState: UIControlState.Normal)
@@ -210,14 +210,14 @@ private enum CaravaggioState {
         self.resizeContainerView(beltRadius: beltRadius + maxItemRadius * 2.0)
     }
     
-    private func colorItemView(frame frame: CGRect, index: Int, section: Int) -> ColorItemView {
+    private func colorItemView(#frame: CGRect, index: Int, section: Int) -> ColorItemView {
         let itemView: ColorItemView = ColorItemView(frame: frame)
         itemView.color = self.dataSource!.color(self, index: index, section: section)
         itemView.beCircle()
         return itemView
     }
     
-    private func resizeContainerView(beltRadius beltRadius: CGFloat) {
+    private func resizeContainerView(#beltRadius: CGFloat) {
         self.itemsContainerView.setSize(width: beltRadius, height: beltRadius)
         let transform = CGAffineTransformMakeRotation(self.viewPosition.rotationAngle)
         self.itemsContainerView.transform = transform
@@ -262,8 +262,8 @@ private enum CaravaggioState {
     }
     
     private func drawColorItemViews(framesMatrix: [[CGRect]]) {
-        for (sectionIndex, framesArray) in framesMatrix.enumerate() {
-            for (itemIndex, frame) in framesArray.enumerate() {
+        for (sectionIndex, framesArray) in enumerate(framesMatrix) {
+            for (itemIndex, frame) in enumerate(framesArray) {
                 let itemView: ColorItemView = self.colorItemView(frame: frame, index: itemIndex, section: sectionIndex)
                 self.itemsContainerView.addSubview(itemView)
             }
@@ -271,7 +271,7 @@ private enum CaravaggioState {
     }
 
     //MARK: Math helper functions
-    private func numberOfItemsFitsToBelt(radius radius: CGFloat, itemRadius: CGFloat, marginBetweenItems: CGFloat) -> Int {
+    private func numberOfItemsFitsToBelt(#radius: CGFloat, itemRadius: CGFloat, marginBetweenItems: CGFloat) -> Int {
         let angle: CGFloat = asin((itemRadius + marginBetweenItems/2.0) / radius) * 2.0
         return Int(angleRange / angle)
     }

@@ -13,9 +13,7 @@
 		0FF08E1D1B638E5A001646D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E1C1B638E5A001646D8 /* ViewController.swift */; };
 		0FF08E201B638E5A001646D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF08E1E1B638E5A001646D8 /* Main.storyboard */; };
 		0FF08E221B638E5A001646D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF08E211B638E5A001646D8 /* Assets.xcassets */; };
-		0FF08E251B638E5A001646D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF08E231B638E5A001646D8 /* LaunchScreen.storyboard */; };
 		0FF08E301B638E5A001646D8 /* CaravaggioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E2F1B638E5A001646D8 /* CaravaggioTests.swift */; };
-		0FF08E3B1B638E5A001646D8 /* CaravaggioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E3A1B638E5A001646D8 /* CaravaggioUITests.swift */; };
 		0FF08E491B63900C001646D8 /* CaravaggioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E481B63900C001646D8 /* CaravaggioButton.swift */; };
 		0FF08E4D1B64C221001646D8 /* UIViewPositionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E4C1B64C221001646D8 /* UIViewPositionExtension.swift */; };
 		0FF08E4F1B64CCAD001646D8 /* MBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF08E4E1B64CCAD001646D8 /* MBButton.swift */; };
@@ -23,13 +21,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		0FF08E2C1B638E5A001646D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0FF08E0F1B638E5A001646D8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0FF08E161B638E5A001646D8;
-			remoteInfo = Caravaggio;
-		};
-		0FF08E371B638E5A001646D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0FF08E0F1B638E5A001646D8 /* Project object */;
 			proxyType = 1;
@@ -46,12 +37,10 @@
 		0FF08E1C1B638E5A001646D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FF08E1F1B638E5A001646D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FF08E211B638E5A001646D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0FF08E241B638E5A001646D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FF08E261B638E5A001646D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FF08E2B1B638E5A001646D8 /* CaravaggioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaravaggioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF08E2F1B638E5A001646D8 /* CaravaggioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaravaggioTests.swift; sourceTree = "<group>"; };
 		0FF08E311B638E5A001646D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FF08E361B638E5A001646D8 /* CaravaggioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaravaggioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF08E3A1B638E5A001646D8 /* CaravaggioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaravaggioUITests.swift; sourceTree = "<group>"; };
 		0FF08E3C1B638E5A001646D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FF08E481B63900C001646D8 /* CaravaggioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaravaggioButton.swift; sourceTree = "<group>"; };
@@ -68,13 +57,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0FF08E281B638E5A001646D8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0FF08E331B638E5A001646D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,7 +81,6 @@
 			children = (
 				0FF08E171B638E5A001646D8 /* Caravaggio.app */,
 				0FF08E2B1B638E5A001646D8 /* CaravaggioTests.xctest */,
-				0FF08E361B638E5A001646D8 /* CaravaggioUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +93,6 @@
 				0FF08E1C1B638E5A001646D8 /* ViewController.swift */,
 				0FF08E1E1B638E5A001646D8 /* Main.storyboard */,
 				0FF08E211B638E5A001646D8 /* Assets.xcassets */,
-				0FF08E231B638E5A001646D8 /* LaunchScreen.storyboard */,
 				0FF08E261B638E5A001646D8 /* Info.plist */,
 				0FF08E481B63900C001646D8 /* CaravaggioButton.swift */,
 				0FF08E4C1B64C221001646D8 /* UIViewPositionExtension.swift */,
@@ -178,24 +158,6 @@
 			productReference = 0FF08E2B1B638E5A001646D8 /* CaravaggioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0FF08E351B638E5A001646D8 /* CaravaggioUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0FF08E451B638E5A001646D8 /* Build configuration list for PBXNativeTarget "CaravaggioUITests" */;
-			buildPhases = (
-				0FF08E321B638E5A001646D8 /* Sources */,
-				0FF08E331B638E5A001646D8 /* Frameworks */,
-				0FF08E341B638E5A001646D8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0FF08E381B638E5A001646D8 /* PBXTargetDependency */,
-			);
-			name = CaravaggioUITests;
-			productName = CaravaggioUITests;
-			productReference = 0FF08E361B638E5A001646D8 /* CaravaggioUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,10 +171,6 @@
 						CreatedOnToolsVersion = 7.0;
 					};
 					0FF08E2A1B638E5A001646D8 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 0FF08E161B638E5A001646D8;
-					};
-					0FF08E351B638E5A001646D8 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 0FF08E161B638E5A001646D8;
 					};
@@ -233,7 +191,6 @@
 			targets = (
 				0FF08E161B638E5A001646D8 /* Caravaggio */,
 				0FF08E2A1B638E5A001646D8 /* CaravaggioTests */,
-				0FF08E351B638E5A001646D8 /* CaravaggioUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,7 +200,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FF08E251B638E5A001646D8 /* LaunchScreen.storyboard in Resources */,
 				0FF08E221B638E5A001646D8 /* Assets.xcassets in Resources */,
 				0FBB18E01B65765B00A01E9C /* caravaggio_icon.png in Resources */,
 				0FF08E201B638E5A001646D8 /* Main.storyboard in Resources */,
@@ -251,13 +207,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0FF08E291B638E5A001646D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0FF08E341B638E5A001646D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,14 +237,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0FF08E321B638E5A001646D8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0FF08E3B1B638E5A001646D8 /* CaravaggioUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -303,11 +244,6 @@
 			isa = PBXTargetDependency;
 			target = 0FF08E161B638E5A001646D8 /* Caravaggio */;
 			targetProxy = 0FF08E2C1B638E5A001646D8 /* PBXContainerItemProxy */;
-		};
-		0FF08E381B638E5A001646D8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0FF08E161B638E5A001646D8 /* Caravaggio */;
-			targetProxy = 0FF08E371B638E5A001646D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -318,14 +254,6 @@
 				0FF08E1F1B638E5A001646D8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0FF08E231B638E5A001646D8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0FF08E241B638E5A001646D8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -367,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -406,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,7 +346,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Caravaggio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MB.Caravaggio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,7 +359,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Caravaggio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MB.Caravaggio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -460,30 +392,6 @@
 			};
 			name = Release;
 		};
-		0FF08E461B638E5A001646D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CaravaggioUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MB.CaravaggioUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Caravaggio;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		0FF08E471B638E5A001646D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CaravaggioUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MB.CaravaggioUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Caravaggio;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -510,15 +418,6 @@
 			buildConfigurations = (
 				0FF08E431B638E5A001646D8 /* Debug */,
 				0FF08E441B638E5A001646D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0FF08E451B638E5A001646D8 /* Build configuration list for PBXNativeTarget "CaravaggioUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0FF08E461B638E5A001646D8 /* Debug */,
-				0FF08E471B638E5A001646D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
