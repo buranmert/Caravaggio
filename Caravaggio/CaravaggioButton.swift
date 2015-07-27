@@ -88,12 +88,18 @@ private enum CaravaggioState {
     }
     private var viewState: CaravaggioState = CaravaggioState.Default {
         didSet {
-            self.updateSize()
             switch self.viewState {
             case .Default:
-                self.itemsContainerView.hidden = true
+                self.animateColorItemViewsVisibility(false, completion: { () -> () in
+                    self.updateSize()
+                    self.itemsContainerView.hidden = true
+                })
             case .Expanded:
+                self.updateSize()
                 self.itemsContainerView.hidden = false
+                self.animateColorItemViewsVisibility(true, completion: { () -> () in
+                    
+                })
             }
         }
     }
@@ -231,6 +237,24 @@ private enum CaravaggioState {
         if dataSource != nil {
             self.viewState = self.viewState.toggledState
         }
+    }
+    
+    private func animateColorItemViewsVisibility(isVisible: Bool, completion:()->()) {
+        let colorItemViews: [UIView] = self.itemsContainerView.subviews.filter { (subview: UIView) -> Bool in
+            return subview.isKindOfClass(ColorItemView)
+        }
+        let newTransform = !isVisible ? CATransform3DMakeRotation(CGFloat(M_PI_2), 1.0, 0.0, 0.0) : CATransform3DIdentity
+        UIView.animateWithDuration(0.2,
+            delay: 0.0,
+            options: UIViewAnimationOptions.CurveEaseInOut,
+            animations: { () -> Void in
+                for colorItemView in colorItemViews {
+                    colorItemView.layer.transform = newTransform
+                }
+            },
+            completion: { (finished) -> Void in
+                completion()
+            })
     }
     
     override func intrinsicContentSize() -> CGSize {
