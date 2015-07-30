@@ -64,9 +64,36 @@ private enum CaravaggioState {
 @IBDesignable class CaravaggioButton: UIView {
     
     class ColorItemView: UIView {
+        private let outerCircleThickness: CGFloat = 1.0
+        private var colorView: UIView?
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            var innerFrame = frame
+            innerFrame.origin.x = outerCircleThickness
+            innerFrame.origin.y = outerCircleThickness
+            innerFrame.size.width -= outerCircleThickness * 2.0
+            innerFrame.size.height -= outerCircleThickness * 2.0
+            self.colorView = UIView(frame: innerFrame)
+            self.addSubview(self.colorView!)
+            self.backgroundColor = UIColor.whiteColor()
+        }
+
+        required init(coder aDecoder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+        
         var color: UIColor? {
             didSet {
-                self.backgroundColor = color
+                if let colorView = self.colorView {
+                    colorView.backgroundColor = color
+                }
+            }
+        }
+        
+        override func beCircle() {
+            super.beCircle()
+            if let colorView = self.colorView {
+                colorView.beCircle()
             }
         }
     }

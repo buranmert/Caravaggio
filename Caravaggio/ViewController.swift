@@ -29,33 +29,15 @@ class ViewController: UIViewController, CaravaggioDataSource, CaravaggioDelegate
     }
     
     func numberOfItems(sender: CaravaggioButton, section: Int) -> Int {
-        switch section {
-        case 0:
-            return 10
-        case 1:
-            return 1
-        case 2:
-            return 4
-        default:
-            return 0
-        }
+        return 40
     }
     
     func numberOfSections(sender: CaravaggioButton) -> Int {
-        return 3
+        return 1
     }
     
     func radiusForSectionItems(sender: CaravaggioButton, section: Int) -> CGFloat {
-        switch section {
-        case 0:
-            return 10.0
-        case 1:
-            return 15.0
-        case 2:
-            return 10.0
-        default:
-            return 5.0
-        }
+        return 12.0
     }
     
     func sizeForButton(sender: CaravaggioButton) -> CGSize {
